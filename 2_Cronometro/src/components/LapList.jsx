@@ -7,8 +7,7 @@ function LapList({ laps, allLaps, setAllLaps }) {
   const [lapsButtonText, setLapsButtonText] = useState("Voltas Salvas \u2228");
 
   function handleLaps() {
-
-    setAllLaps(useAllLaps)
+    setAllLaps(useAllLaps);
 
     if (allLaps.length === 0) {
       setLapsButtonText("Não há Voltas Salvas!");
@@ -33,7 +32,6 @@ function LapList({ laps, allLaps, setAllLaps }) {
           );
         })}
       </ul>
-
       <button onClick={handleLaps}>{lapsButtonText}</button>
       {showLaps && allLaps.length > 0 && (
         <ul>
