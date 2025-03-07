@@ -7,3 +7,8 @@ Cada pasta é um projeto individual, enumerado de acordo com a ordem em que fora
 Cada projeto será hospedado via GitHub Pages, permitindo que você visualize as aplicações online.
 
 Explore e aproveite para aprender e se inspirar!
+
+---
+
+- Calculadora: [testar](https://vitormenoli.github.io/projetos-reactjs/1_Calculadora/)
+- Cronômetro: [testar](https://vitormenoli.github.io/projetos-reactjs/2_Cronometro/)
