@@ -43,6 +43,6 @@ fs.writeFileSync(path.join(deployDir, 'index.html'), indexContent);
 
 console.log("Deploy consolidado sendo realizado...");
 // Faz o deploy do diretório consolidado usando o gh-pages
-execSync(`npx gh-pages -d ${deployDir}`, { stdio: "inherit" });
+execSync(`npx gh-pages -d "${deployDir}"`, { stdio: "inherit" });
 
 console.log("Todos os projetos foram implantados com sucesso!");
