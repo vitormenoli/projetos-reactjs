@@ -32,7 +32,7 @@ function CurrencyConverter() {
   }, [amount, rates, fromCurrency, toCurrency]);
 
   if (!rates) {
-    return <h1>Carregando...</h1>;
+    return <></>;
   }
 
   return (
