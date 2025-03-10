@@ -10,5 +10,4 @@ Explore e aproveite para aprender e se inspirar!
 
 ---
 
-- 1. Calculadora: [testar](https://vitormenoli.github.io/projetos-reactjs/1_Calculadora/)
-- 2. Cronômetro: [testar](https://vitormenoli.github.io/projetos-reactjs/2_Cronometro/)
+- Veja todos os projetos clicando [aqui](https://vitormenoli.github.io/projetos-reactjs/)
