@@ -3,7 +3,7 @@ const fs = require("fs-extra"); // Recomendo usar fs-extra para facilitar opera�
 const path = require("path");
 
 // Lista com os nomes dos diretórios dos projetos – ajuste conforme o número de projetos
-const projects = ['1_Calculadora', '2_Cronometro']; // Adicione os demais projetos aqui
+const projects = ['1_Calculadora', '2_Cronometro', '3_Conversor_Moeda']; // Adicione os demais projetos aqui
 
 // Diretório temporário para consolidar os builds
 const deployDir = path.join(__dirname, 'deploy-temp');
