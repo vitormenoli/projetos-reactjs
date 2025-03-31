@@ -1,0 +1,166 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.App {
+    background-color: #9ca7b3;
+    padding: 5rem 10rem;
+    border-radius: 10px;
+}
+
+.square {
+    margin: 1px;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: #8b8b8b;
+    border: none;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.square:hover {
+  background-color: #7a7a7a;
+}
+
+.square.filled-X {
+  background-color: lightblue;
+  color: blue;
+}
+
+.square.filled-X:hover {
+  background-color: lightblue;
+  color: blue;
+}
+
+.square.filled-O {
+  background-color: lightcoral;
+  color: red;
+}
+
+.square.filled-O:hover {
+  background-color: lightcoral;
+  color: red;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.status {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #333; /* cor padrão */
+}
+
+.status-x {
+  background-color: lightblue; /* Fundo azul para o vencedor X */
+}
+
+.status-o {
+  background-color: lightcoral; /* Fundo vermelho para o vencedor O */
+}
+
+.status-empate {
+  background-color: lightyellow; /* Fundo amarelo para o empate */
+}
+
+.winner {
+  font-weight: bold;
+}
+
+.winner-x {
+  color: blue; /* Cor do 'X' */
+}
+
+.winner-o {
+  color: red; /* Cor do 'O' */
+}
+
+.empate {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.reset-button:hover {
+    background-color: #0056b3;
+}
+
+.disabled {
+    background-color: #0057b3a8;
+}
+
+.disabled:hover {
+    background-color: #0057b3a8;
+    cursor: no-drop;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .App {
+    padding: 3rem 5rem;
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 28px;
+  }
+
+  .status {
+    font-size: 20px;
+  }
+
+  .reset-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 2rem;
+  }
+
+  .square {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .status {
+    font-size: 18px;
+  }
+
+  .reset-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
