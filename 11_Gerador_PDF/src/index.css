@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  width: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.configLabel {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#arquivoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bg-gray {
+  background-color: #e4e1e1;
+}
+
+textarea {
+  min-height: 400px;
+  overflow-y: auto;
+  resize: none; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00ff95;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: .5s;
+  margin: 30px 0 20px 0;
+}
+
+.button:hover {
+  background-color: #009b5a;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textStyleConfig {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.titleConfig {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.imageUpload {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.colorPicker,
+.fileInput {
+  cursor: pointer;
+}
+
+#arquivoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#arquivoContainer input[type="file"] {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 400px;
+  }
+
+  label, p, span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 300px;
+  }
+
+  label, p, span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 370px) {
+  .container {
+    max-width: 250px;
+  }
+
+  label, p, span {
+    font-size: 12px;
+  }
+}
