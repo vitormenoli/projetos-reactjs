@@ -13,11 +13,11 @@ function TaxReport({ taxData }) {
         style={{
             border: "1px solid #000",
             borderRadius: "15px",
-            margin: "2rem",
+            margin: "2rem auto",
             padding: "1rem",
             display: "flex",
             flexDirection: "column",
-            gap: "10px",
+            gap: "10px"
         }}
     >
         <Typography
