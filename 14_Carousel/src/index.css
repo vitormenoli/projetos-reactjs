@@ -1,0 +1,96 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #d0d0d0;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.desc {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  font-size: 18px;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  transition: opcity 1s;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 20px;
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+  .slide img {
+    height: 300px;
+  }
+}
+
+.indicators {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #6e6b6b;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #fff;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
