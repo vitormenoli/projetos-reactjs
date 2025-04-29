@@ -71,7 +71,7 @@ function InfiniteScroll() {
             </h3>
             <p className="text-center">{post.body}</p>
 
-            {index == 119 && (
+            {index == 109 && (
               <div className="flex flex-col items-center justify-center mt-5 bg-gray-200 rounded-2xl max-w-xl mx-auto">
                 <p className="text-3xl text-center m-5 font-bold px-5 py-2 bg-yellow-500 rounded-lg">
                   Você chegou ao fim :)
