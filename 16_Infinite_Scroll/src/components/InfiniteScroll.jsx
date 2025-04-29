@@ -72,18 +72,23 @@ function InfiniteScroll() {
             <p className="text-center">{post.body}</p>
 
             {index == 119 && (
-                <div className="flex flex-col items-center justify-center mt-5 bg-gray-200 rounded-2xl max-w-xl mx-auto">
-                              <p className="text-3xl text-center m-5 font-bold px-5 py-2 bg-yellow-500 rounded-lg">
-                Você chegou ao fim :)
-              </p>
+              <div className="flex flex-col items-center justify-center mt-5 bg-gray-200 rounded-2xl max-w-xl mx-auto">
+                <p className="text-3xl text-center m-5 font-bold px-5 py-2 bg-yellow-500 rounded-lg">
+                  Você chegou ao fim :)
+                </p>
 
-              <a className="mb-5 p-2 rounded-sm transition duration-100 bg-yellow-700 hover:bg-yellow-600 " href="#inicio">Voltar ao topo</a>
+                <a
+                  className="mb-5 p-2 rounded-sm transition duration-100 bg-yellow-700 hover:bg-yellow-600 "
+                  href="#inicio"
+                >
+                  Voltar ao topo
+                </a>
               </div>
             )}
           </li>
         ))}
       </ul>
-      {isLoading && <p>Carregando...</p>}
+      {isLoading && <p className="text-center m-5 font-bold text-2xl">Carregando...</p>}
     </>
   );
 }
