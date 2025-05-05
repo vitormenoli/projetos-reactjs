@@ -1,0 +1,35 @@
+button {
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background-color: #f44236;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .9;
+    flex: 1;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#calc-btn {
+    background-color: #36f47f;
+}
+
+#clear-btn {
+    background-color: #f44236;
+}
+
+#imc-btn {
+    background-color: #36b8f4;
+}
+
+/* Responsividade: */
+@media (max-width: 768px) {
+    button {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+}

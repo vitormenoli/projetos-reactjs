@@ -1,0 +1,138 @@
+#calc-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: #ccc;
+}
+
+.form-control input {
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #222;
+    color: #fff;
+}
+
+.action-control {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #1d1e33;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h3 {
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    margin-bottom: 1.5rem;
+}
+
+#imc-table {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
+}
+
+.table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+#close-btn {
+    margin-top: 1.5rem;
+    background-color: #f44236;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-btn:hover {
+    background-color: #d12f2b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    #imc-table {
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsividade: */
+@media (max-width: 768px) {
+    #calc-container {
+        padding: 1rem;
+    }
+
+    .form-inputs {
+        flex-direction: column;
+    }
+
+    .form-control input {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    .action-control {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

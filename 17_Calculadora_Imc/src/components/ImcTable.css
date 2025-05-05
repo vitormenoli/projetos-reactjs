@@ -1,0 +1,130 @@
+#result-container {
+    text-align: center;
+}
+
+.result-table {
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#imc-number {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#imc-info {
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+#result-container h3 {
+    margin-top: 1rem;
+    color: #dfdfdf;
+}
+
+#result-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-table {
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.table-header,
+.table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid #444;
+}
+
+.table-header h4,
+.table-data p {
+    flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+    max-width: 80px;
+}
+
+#back-btn {
+    align-self: center;
+}
+
+.good {
+    color: #12db34;
+}
+
+.low {
+    color: #dbce12;
+}
+
+.medium {
+    color: #db6212
+}
+
+.high {
+    color: #db1912;
+}
+
+/* Estilo para destacar a linha */
+.table-data.medium {
+    background-color: rgba(219, 98, 18, 0.2); /* Laranja claro */
+}
+
+.table-data.good {
+    background-color: rgba(18, 219, 52, 0.2); /* Verde claro */
+}
+
+.table-data.low {
+    background-color: rgba(219, 206, 18, 0.2); /* Amarelo claro */
+}
+
+.table-data.high {
+    background-color: rgba(219, 25, 18, 0.2); /* Vermelho claro */
+}
+
+/* Responsividade: */
+@media (max-width: 768px) {
+    #result-container {
+        padding: 1rem;
+    }
+
+    #imc-number {
+        font-size: 2rem;
+    }
+
+    #imc-info {
+        font-size: 1.2rem;
+    }
+
+    #imc-table {
+        font-size: 0.7rem;
+    }
+
+    .table-header h4,
+    .table-data p {
+        font-size: 0.8rem;
+    }
+
+    #back-btn {
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        padding: 12rem;
+    }
+}

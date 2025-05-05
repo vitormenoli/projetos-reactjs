@@ -1,0 +1,28 @@
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #1d1e33;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.chart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Responsividade: */
+@media (max-width: 768px) {
+    .chart-container {
+        padding: 0.8rem;
+        margin: 1rem auto;
+    }
+
+    .chart-title {
+        font-size: 1.2rem;
+    }
+}
