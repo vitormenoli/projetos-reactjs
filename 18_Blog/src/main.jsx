@@ -14,7 +14,7 @@ import EditPost from './routes/EditPost.jsx'
 
 const router = createBrowserRouter([
   {
-    element: <App />,
+    element: <App />, 
     children: [
       {
         path: '/',
@@ -38,7 +38,9 @@ const router = createBrowserRouter([
       }
     ]
   },
-])
+], {
+  basename: '/projetos-reactjs/18_Blog'
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

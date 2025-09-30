@@ -43,7 +43,7 @@ function Post() {
       ) : (
         <p>Post não encontrado.</p>
       )}
-      <Link to="/" className='btn-back'>Voltar</Link>
+  <Link to="/" className='btn-back'>Voltar</Link>
     </div>
   );
 }

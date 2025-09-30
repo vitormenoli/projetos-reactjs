@@ -42,7 +42,7 @@ function EditPost() {
     e.preventDefault();
     const post = { title, body, userId: 1 };
     await editPost(id, post);
-    navigate("/");
+  navigate("/");
   };
 
   return (

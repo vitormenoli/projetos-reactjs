@@ -14,7 +14,7 @@ function NewPost() {
     e.preventDefault();
     const post = { title, body, userId: 1 };
     await createPost(post);
-    navigate('/');
+  navigate('/');
   };
 
   return (
