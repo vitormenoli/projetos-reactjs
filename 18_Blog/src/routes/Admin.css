@@ -1,0 +1,43 @@
+.admin > h1 {
+    margin-bottom: 40px; /* Mais espaço abaixo do título */
+}
+
+.actions {
+    display: flex;
+    gap: 18px; /* Mais espaço entre os botões */
+}
+
+.post:not(:last-child) {
+    margin-bottom: 32px; /* Mais espaço entre os posts */
+}
+.edit-btn {
+    background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 242, 254, 0.15);
+}
+
+.edit-btn:hover {
+    box-shadow: 0 4px 16px rgba(0, 242, 254, 0.25);
+    opacity: 0.92;
+}
+
+.delete-btn {
+    background: linear-gradient(90deg, #fc466b 0%, #ff5858 100%);
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(252, 70, 107, 0.15);
+}
+
+.delete-btn:hover {
+    box-shadow: 0 4px 16px rgba(252, 70, 107, 0.25);
+    opacity: 0.92;
+}

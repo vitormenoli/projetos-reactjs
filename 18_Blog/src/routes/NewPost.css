@@ -1,0 +1,60 @@
+.new-post h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-control label {
+    margin-bottom: .5rem;
+}
+
+.form-control input,
+.form-control textarea {
+    font-size: 1rem;
+    padding: .75rem 1rem;
+    border: 1.5px solid #2d3748;
+    border-radius: .5rem;
+    background-color: #23272f;
+    color: #e2e8f0;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(45, 55, 72, 0.05);
+    outline: none;
+}
+
+/* Botão estilizado com cor verde */
+.btn-create-post {
+    background-color: #38a169;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-create-post:hover {
+    background: linear-gradient(90deg, #38a169 0%, #48bb78 100%);
+    background-size: 200% 100%;
+    background-position: right center;
+    color: #e6fffa;
+    box-shadow: 0 4px 16px rgba(56, 161, 105, 0.15);
+    transition: background 0.4s, box-shadow 0.2s, color 0.2s;
+}
+
+.form-control textarea:focus,
+.form-control input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 2px #3182ce33;
+}

@@ -1,0 +1,109 @@
+.home h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #777;
+}
+
+.post h2,
+.post p {
+    margin-bottom: 1rem;
+}
+
+.post h2::first-letter {
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #fff;
+    color: #0e1217;
+    border: 1px solid #fff;
+    opacity: 1;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    max-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #0e1217;
+    color: #fff;
+    border-color: #00ffe7;
+    box-shadow: 0 0 8px #00ffe7, 0 0 16px #00ffe733 inset;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+/* Technological Clean Styles */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #181c22 0%, #232a34 100%);
+    background-attachment: fixed;
+    color: #e3eaf2;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.home h1 {
+    color: #00ffe7;
+    text-shadow: 0 2px 8px #00ffe733;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    border-bottom: 2px solid #232a34;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.post {
+    background: #232a34;
+    border: 1px solid #2e3742;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px #00ffe71a;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.post:hover {
+    box-shadow: 0 4px 24px #00ffe733;
+    border-color: #00ffe7;
+}
+
+.post h2 {
+    color: #00ffe7;
+    font-weight: 600;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    text-shadow: 0 1px 4px #00ffe71a;
+    margin-bottom: 0.5rem;
+}
+
+.post p {
+    color: #b3c2d1;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    opacity: 0.96;
+}
+
+.btn {
+    background: linear-gradient(90deg, #232a34 0%, #00ffe7 100%);
+    color: #181c22;
+    border: 1px solid #00ffe7;
+    box-shadow: 0 0 8px #00ffe733;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
