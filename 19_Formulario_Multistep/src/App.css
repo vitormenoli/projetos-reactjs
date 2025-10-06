@@ -1,0 +1,216 @@
+.app {
+  padding: 2rem;
+}
+
+/* Ensure .app creates a stacking context so the ::before overlay can sit behind content */
+.app {
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: rgba(100, 100, 111, .2) 0px 7px 29px 0px;
+}
+
+.form-container form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.inputs-container {
+  min-height: 280px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-weight: bold;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  padding: .6rem;
+  border: none;
+  border-radius: 3px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Make form controls fluid */
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.actions button {
+  font-size: 0.9rem;
+  padding: .5rem 1rem;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #dfdfdf;
+  cursor: pointer;
+  border: none;
+  transition: .3s;
+}
+
+.actions button:hover {
+  background-color: #cfcfcf;
+}
+
+.success-message {
+  background-color: #00800080;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  gap: 2rem;
+}
+
+.success-message p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.success-message button {
+  font-weight: bold;
+}
+
+/* Responsive adjustments - keep the desktop "padrão" but adapt on smaller screens */
+@media (max-width: 900px) {
+  .form-container {
+    max-width: 90%;
+    padding: 1.25rem;
+  }
+
+  .form-container form {
+    max-width: 100%;
+  }
+
+  .inputs-container {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .header h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-container {
+    width: 95vw;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .form-container form {
+    padding: 0;
+  }
+
+  .inputs-container {
+    min-height: auto;
+  }
+
+  /* Stack action buttons vertically on small screens */
+  .actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .actions button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Make success text wrap better */
+  .success-message {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Success overlay animation: começa como um pequeno círculo no canto inferior-esquerdo
+   e expande para cobrir toda a viewport em 3s; mantém o estado final (forwards). */
+.app::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /* make the element large but start scaled down so it can expand to cover the viewport */
+  width: 160vmax;
+  height: 160vmax;
+  pointer-events: none;
+  z-index: 0; /* keep behind page elements */
+  background: linear-gradient(135deg, rgba(198, 239, 206, 0.98) 0%, rgba(165, 214, 167, 0.98) 60%, rgba(129, 199, 132, 0.98) 100%);
+  border-radius: 50%;
+  opacity: 0; /* hidden by default to avoid the small visible circle */
+  transform-origin: left bottom; /* expand toward top-right */
+  transform: scale(0) translateZ(0);
+}
+
+.app.success::before {
+  animation: successFill 3s forwards cubic-bezier(.2,.9,.2,1);
+}
+
+/* Raise the main content above the overlay so elements remain interactable/visible */
+.app > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes successFill {
+  0% {
+    transform: scale(0) translateZ(0);
+    border-radius: 50%;
+    opacity: 0.0;
+  }
+  5% {
+    /* quickly make it visible as it starts to expand */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateZ(0);
+    border-radius: 0;
+    opacity: 1;
+  }
+}
+
+/* Ajuste de cor do texto para manter legibilidade (opcional) */
+.app.success, .app.success .header h2, .app.success p {
+  color: #0b3d0b; /* texto fica mais escuro/verdejante */
+  transition: color 0.6s ease;
+}
