@@ -1,0 +1,20 @@
+.toggle{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease;
+}
+
+.toggle:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(2,6,23,0.45);
+}
+
+.icon{ display:inline-flex; align-items:center; justify-content:center; }
+.label{ font-size: .85rem; color: var(--muted); }

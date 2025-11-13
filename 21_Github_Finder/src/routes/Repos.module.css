@@ -1,0 +1,48 @@
+.repos h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--fg);
+}
+
+.repos_container {
+    background-color: var(--surface);
+    padding: 1.4rem 1.6rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 28px rgba(2,6,23,0.5);
+}
+
+.controls{
+    display:flex;
+    gap:.5rem;
+    justify-content:center;
+    margin-bottom:1rem;
+}
+
+.control_btn{
+    padding:.45rem .9rem;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background: rgba(255,255,255,0.01);
+    color:var(--fg);
+    cursor:pointer;
+}
+
+.control_btn:hover{ transform: translateY(-2px); }
+
+.control_btn.active{
+    background: var(--accent);
+    color: #fff;
+    border-color: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 720px){
+  .repos_container{ padding: 1rem; gap: .8rem }
+  .controls{ flex-direction:column }
+}

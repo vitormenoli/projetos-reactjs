@@ -1,0 +1,20 @@
+.back_btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .5rem 1rem;
+    color: var(--muted);
+    background-color: var(--glass);
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    opacity: .95;
+    box-shadow: var(--shadow);
+    transition: transform .14s ease, background-color .14s ease, opacity .12s ease;
+}
+
+.back_btn:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+    background-color: rgba(255,255,255,0.03);
+}

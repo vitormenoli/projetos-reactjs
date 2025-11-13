@@ -1,0 +1,27 @@
+.home_container{
+  /* display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 900px){
+  .home_container{
+    grid-template-columns: 1fr 1fr; /* Search | User */
+    align-items: start;
+  }
+}
+
+/* Ensure search and user components stretch nicely */
+.home_container > *{
+  width: 100%;
+}
+
+/* small tweak for mobile spacing */
+@media (max-width: 420px){
+  .home_container{ gap: .6rem }
+}

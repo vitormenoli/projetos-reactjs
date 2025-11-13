@@ -1,0 +1,58 @@
+:root{
+  --bg: #0d1117; /* GitHub dark background */
+  --surface: #0f1720; /* slightly lighter surface */
+  --muted: #8b949e; /* secondary text */
+  --fg: #c9d1d9; /* primary text */
+  --border: #30363d;
+  --primary: #238636; /* GitHub green for accents (use sparingly) */
+  --accent: #0969da; /* GitHub blue for buttons/links */
+  --danger: #cf222e;
+  --shadow: 0 4px 10px rgba(2,6,23,0.6);
+  --glass: rgba(255,255,255,0.02);
+}
+
+/* Light theme overrides when html[data-theme="light"] is set */
+:root[data-theme="light"]{
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --muted: #6e7781;
+  --fg: #24292f;
+  --border: #e1e4e8;
+  --primary: #238636;
+  --accent: #0969da;
+  --danger: #cf222e;
+  --shadow: 0 4px 10px rgba(3,10,25,0.06);
+  --glass: rgba(2,6,23,0.02);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: var(--fg);
+}
+
+body {
+  background-color: var(--bg);
+  padding: 2rem;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+p {
+  text-align: center;
+  color: var(--muted);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+  transition: color .18s ease, text-decoration .12s ease;
+}
+
+/* small helper utilities */
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+}
